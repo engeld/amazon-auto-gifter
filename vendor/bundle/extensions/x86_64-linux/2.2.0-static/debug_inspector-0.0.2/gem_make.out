@@ -1,0 +1,11 @@
+/package/host/localhost/ruby-2.2.3/bin/ruby -r ./siteconf20151221-3924-dgbthk.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20151221-3924-17r9sji

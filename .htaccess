@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule (.*) http://localhost:10524/$1 [P]

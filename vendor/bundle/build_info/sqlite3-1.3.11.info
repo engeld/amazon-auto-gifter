@@ -1,0 +1,1 @@
+--with-sqlite3-include=/package/host/localhost/sqlite-3/include --with-sqlite3-lib=/package/host/localhost/sqlite-3/lib

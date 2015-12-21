@@ -1,0 +1,24 @@
+/package/host/localhost/ruby-2.2.3/bin/ruby -r ./siteconf20151221-9013-1k4i3ek.rb extconf.rb
+checking for mmap() in sys/mman.h... yes
+checking for munmap() in sys/mman.h... yes
+checking for mremap() in sys/mman.h... yes
+checking for linux/tcp.h... yes
+checking for getpagesize() in unistd.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_io_blocking_region()... yes
+checking for GCC 4+ atomic builtins... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling raindrops.c
+compiling linux_tcp_info.c
+compiling linux_inet_diag.c
+linux_inet_diag.c: In function 'stats_for':
+linux_inet_diag.c:295: warning: dereferencing type-punned pointer will break strict-aliasing rules
+linux_inet_diag.c:307: warning: dereferencing type-punned pointer will break strict-aliasing rules
+linking shared-object raindrops_ext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 raindrops_ext.so ./.gem.20151221-9013-6m733p

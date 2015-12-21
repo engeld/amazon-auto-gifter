@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: 1
+  name: MyString
+  link: MyText
+  old-price: MyString
+  new-price: MyString
+  date-added: MyText
+  priority: MyString
+  rating: MyString
+  total-ratings: MyString
+  comment: MyText
+  picture: MyString
+  page: 1
+
+two:
+  num: 1
+  name: MyString
+  link: MyText
+  old-price: MyString
+  new-price: MyString
+  date-added: MyText
+  priority: MyString
+  rating: MyString
+  total-ratings: MyString
+  comment: MyText
+  picture: MyString
+  page: 1

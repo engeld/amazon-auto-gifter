@@ -1,0 +1,15 @@
+<h1>All Amazon Wishlist items</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Link</th>
+  </tr>
+
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.link %></td>
+    </tr>
+  <% end %>
+</table>

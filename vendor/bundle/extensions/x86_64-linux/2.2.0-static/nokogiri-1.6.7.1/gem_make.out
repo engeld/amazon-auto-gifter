@@ -1,0 +1,314 @@
+/package/host/localhost/ruby-2.2.3/bin/ruby -r ./siteconf20151221-3924-1wozqos.rb extconf.rb
+checking if the C compiler accepts ... yes
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.0.0
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.2
+with the following patches applied:
+	- 0001-Revert-Missing-initialization-for-the-catalog-module.patch
+	- 0002-Fix-missing-entities-after-CVE-2014-3660-fix.patch
+	- 0003-Stop-parsing-on-entities-boundaries-errors.patch
+	- 0004-Cleanup-conditional-section-error-handling.patch
+	- 0005-CVE-2015-1819-Enforce-the-reader-to-run-in-constant-.patch
+	- 0006-Another-variation-of-overflow-in-Conditional-section.patch
+	- 0007-Fix-an-error-in-previous-Conditional-section-patch.patch
+	- 0008-CVE-2015-8035-Fix-XZ-compression-support-loop.patch
+	- 0009-Updated-config.guess.patch
+	- 0010-Fix-parsering-short-unclosed-comment-uninitialized-access.patch
+	- 0011-Avoid-extra-processing-of-MarkupDecl-when-EOF.patch
+	- 0012-Avoid-processing-entities-after-encoding-conversion-.patch
+	- 0013-CVE-2015-7497-Avoid-an-heap-buffer-overflow-in-xmlDi.patch
+	- 0014-CVE-2015-5312-Another-entity-expansion-issue.patch
+	- 0015-Add-xmlHaltParser-to-stop-the-parser.patch
+	- 0016-Detect-incoherency-on-GROW.patch
+	- 0017-CVE-2015-7500-Fix-memory-access-error-due-to-incorre.patch
+	- 0018-CVE-2015-8242-Buffer-overead-with-HTML-parser-in-pus.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.2.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.2... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0001-Revert-Missing-initialization-for-the-catalog-module.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0002-Fix-missing-entities-after-CVE-2014-3660-fix.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0003-Stop-parsing-on-entities-boundaries-errors.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0004-Cleanup-conditional-section-error-handling.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0005-CVE-2015-1819-Enforce-the-reader-to-run-in-constant-.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0006-Another-variation-of-overflow-in-Conditional-section.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0007-Fix-an-error-in-previous-Conditional-section-patch.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0008-CVE-2015-8035-Fix-XZ-compression-support-loop.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0009-Updated-config.guess.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0010-Fix-parsering-short-unclosed-comment-uninitialized-access.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0011-Avoid-extra-processing-of-MarkupDecl-when-EOF.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0012-Avoid-processing-entities-after-encoding-conversion-.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0013-CVE-2015-7497-Avoid-an-heap-buffer-overflow-in-xmlDi.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0014-CVE-2015-5312-Another-entity-expansion-issue.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0015-Add-xmlHaltParser-to-stop-the-parser.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0016-Detect-incoherency-on-GROW.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0017-CVE-2015-7500-Fix-memory-access-error-due-to-incorre.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxml2/0018-CVE-2015-8242-Buffer-overead-with-HTML-parser-in-pus.patch... OK
+Running 'configure' for libxml2 2.9.2... OK
+Running 'compile' for libxml2 2.9.2... OK
+Running 'install' for libxml2 2.9.2... OK
+Activating libxml2 2.9.2 (from /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/ports/x86_64-pc-linux-gnu/libxml2/2.9.2)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.28
+with the following patches applied:
+	- 0001-Adding-doc-update-related-to-1.1.28.patch
+	- 0002-Fix-a-couple-of-places-where-f-printf-parameters-wer.patch
+	- 0003-Initialize-pseudo-random-number-generator-with-curre.patch
+	- 0004-EXSLT-function-str-replace-is-broken-as-is.patch
+	- 0006-Fix-str-padding-to-work-with-UTF-8-strings.patch
+	- 0007-Separate-function-for-predicate-matching-in-patterns.patch
+	- 0008-Fix-direct-pattern-matching.patch
+	- 0009-Fix-certain-patterns-with-predicates.patch
+	- 0010-Fix-handling-of-UTF-8-strings-in-EXSLT-crypto-module.patch
+	- 0013-Memory-leak-in-xsltCompileIdKeyPattern-error-path.patch
+	- 0014-Fix-for-bug-436589.patch
+	- 0015-Fix-mkdir-for-mingw.patch
+	- 0016-Fix-for-type-confusion-in-preprocessing-attributes.patch
+	- 0017-Updated-config.guess.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Extracting libxslt-1.1.28.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxslt/1.1.28... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0001-Adding-doc-update-related-to-1.1.28.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0002-Fix-a-couple-of-places-where-f-printf-parameters-wer.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0003-Initialize-pseudo-random-number-generator-with-curre.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0004-EXSLT-function-str-replace-is-broken-as-is.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0006-Fix-str-padding-to-work-with-UTF-8-strings.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0007-Separate-function-for-predicate-matching-in-patterns.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0008-Fix-direct-pattern-matching.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0009-Fix-certain-patterns-with-predicates.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0010-Fix-handling-of-UTF-8-strings-in-EXSLT-crypto-module.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0013-Memory-leak-in-xsltCompileIdKeyPattern-error-path.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0014-Fix-for-bug-436589.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0015-Fix-mkdir-for-mingw.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0016-Fix-for-type-confusion-in-preprocessing-attributes.patch... OK
+Running git apply with /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/patches/libxslt/0017-Updated-config.guess.patch... OK
+Running 'configure' for libxslt 1.1.28... OK
+Running 'compile' for libxslt 1.1.28... OK
+Running 'install' for libxslt 1.1.28... OK
+Activating libxslt 1.1.28 (from /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/ports/x86_64-pc-linux-gnu/libxslt/1.1.28)...
+checking for main() in -llzma... no
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling xml_sax_push_parser.c
+compiling xml_dtd.c
+compiling xml_xpath_context.c
+xml_xpath_context.c: In function 'lookup':
+xml_xpath_context.c:165: warning: unused parameter 'ns_uri'
+xml_xpath_context.c: In function 'xpath_generic_exception_handler':
+xml_xpath_context.c:175: warning: unused parameter 'ctx'
+compiling xml_element_decl.c
+compiling xml_comment.c
+compiling html_sax_parser_context.c
+compiling xml_schema.c
+compiling xml_attribute_decl.c
+compiling html_document.c
+compiling xml_syntax_error.c
+xml_syntax_error.c: In function 'Nokogiri_error_silencer':
+xml_syntax_error.c:10: warning: unused parameter 'ctx'
+xml_syntax_error.c:10: warning: unused parameter 'error'
+xml_syntax_error.c: In function 'Nokogiri_error_raise':
+xml_syntax_error.c:14: warning: unused parameter 'ctx'
+compiling xml_libxml2_hacks.c
+compiling xml_element_content.c
+compiling xml_entity_reference.c
+compiling xml_text.c
+compiling xslt_stylesheet.c
+xslt_stylesheet.c: In function 'Nokogiri_wrap_xslt_stylesheet':
+xslt_stylesheet.c:48: warning: passing argument 1 of 'ruby_xcalloc' with different width due to prototype
+xslt_stylesheet.c: In function 'parse_stylesheet_doc':
+xslt_stylesheet.c:72: warning: passing argument 2 of 'rb_str_new_static' with different width due to prototype
+xslt_stylesheet.c:72: warning: passing argument 2 of 'rb_str_new' with different width due to prototype
+xslt_stylesheet.c:64: warning: unused parameter 'klass'
+xslt_stylesheet.c: In function 'swallow_superfluous_xml_errors':
+xslt_stylesheet.c:112: warning: unused parameter 'userdata'
+xslt_stylesheet.c:112: warning: unused parameter 'error'
+xslt_stylesheet.c: In function 'transform':
+xslt_stylesheet.c:166: warning: passing argument 2 of 'rb_str_new_static' with different width due to prototype
+xslt_stylesheet.c:166: warning: passing argument 2 of 'rb_str_new' with different width due to prototype
+xslt_stylesheet.c: In function 'initFunc':
+xslt_stylesheet.c:212: warning: passing argument 2 of 'rb_ary_entry' with different width due to prototype
+xslt_stylesheet.c:217: warning: passing argument 1 of 'rb_data_object_get' makes integer from pointer without a cast
+xslt_stylesheet.c: In function 'shutdownFunc':
+xslt_stylesheet.c:230: warning: passing argument 1 of 'rb_data_object_get' makes integer from pointer without a cast
+xslt_stylesheet.c:226: warning: unused parameter 'uri'
+xslt_stylesheet.c:226: warning: unused parameter 'data'
+compiling xml_document.c
+xml_document.c: In function 'dealloc_node_i':
+xml_document.c:3: warning: unused parameter 'key'
+xml_document.c: In function 'set_encoding':
+xml_document.c:182: warning: cast discards qualifiers from pointer target type
+xml_document.c: In function 'canonicalize':
+xml_document.c:537: warning: cast discards qualifiers from pointer target type
+xml_document.c: In function 'Nokogiri_wrap_xml_document':
+xml_document.c:601: warning: passing argument 1 of 'st_init_numtable_with_size' with different width due to prototype
+compiling xml_attr.c
+compiling xml_io.c
+xml_io.c: In function 'io_read_callback':
+xml_io.c:20: warning: passing argument 4 of 'rb_rescue' with different width due to prototype
+xml_io.c: In function 'io_write_callback':
+xml_io.c:46: warning: passing argument 4 of 'rb_rescue' with different width due to prototype
+xml_io.c: In function 'io_close_callback':
+xml_io.c:53: warning: unused parameter 'ctx'
+compiling nokogiri.c
+compiling xml_document_fragment.c
+compiling xml_relax_ng.c
+compiling xml_node_set.c
+xml_node_set.c: In function 'dealloc_namespace':
+xml_node_set.c:9: warning: cast discards qualifiers from pointer target type
+xml_node_set.c:11: warning: cast discards qualifiers from pointer target type
+xml_node_set.c: In function 'deallocate':
+xml_node_set.c:52: warning: passing argument 3 of 'st_foreach' with different width due to prototype
+xml_node_set.c: In function 'allocate':
+xml_node_set.c:63: warning: unused parameter 'klass'
+xml_node_set.c: In function 'to_array':
+xml_node_set.c:357: warning: unused parameter 'rb_node'
+xml_node_set.c: In function 'Nokogiri_wrap_xml_node_set':
+xml_node_set.c:419: warning: passing argument 1 of 'ruby_xcalloc' with different width due to prototype
+compiling xml_processing_instruction.c
+compiling xml_encoding_handler.c
+xml_encoding_handler.c: In function 'delete':
+xml_encoding_handler.c:24: warning: unused parameter 'klass'
+xml_encoding_handler.c: In function 'alias':
+xml_encoding_handler.c:36: warning: unused parameter 'klass'
+compiling html_element_description.c
+html_element_description.c: In function 'get_description':
+html_element_description.c:252: warning: cast discards qualifiers from pointer target type
+compiling html_entity_lookup.c
+html_entity_lookup.c: In function 'get':
+html_entity_lookup.c:9: warning: unused parameter 'self'
+compiling xml_sax_parser_context.c
+compiling xml_node.c
+xml_node.c: In function 'reparent_node_with':
+xml_node.c:168: warning: enumeration value 'XML_ATTRIBUTE_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_ENTITY_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_DOCUMENT_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_DOCUMENT_FRAG_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_NOTATION_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_HTML_DOCUMENT_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_DTD_NODE' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_ELEMENT_DECL' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_ATTRIBUTE_DECL' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_ENTITY_DECL' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_NAMESPACE_DECL' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_XINCLUDE_START' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_XINCLUDE_END' not handled in switch
+xml_node.c:168: warning: enumeration value 'XML_DOCB_DOCUMENT_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_ATTRIBUTE_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_ENTITY_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_DOCUMENT_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_DOCUMENT_TYPE_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_DOCUMENT_FRAG_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_NOTATION_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_HTML_DOCUMENT_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_DTD_NODE' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_ELEMENT_DECL' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_ATTRIBUTE_DECL' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_ENTITY_DECL' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_NAMESPACE_DECL' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_XINCLUDE_START' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_XINCLUDE_END' not handled in switch
+xml_node.c:186: warning: enumeration value 'XML_DOCB_DOCUMENT_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_ELEMENT_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_ATTRIBUTE_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_CDATA_SECTION_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_ENTITY_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_PI_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_COMMENT_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_DOCUMENT_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_DOCUMENT_TYPE_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_DOCUMENT_FRAG_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_NOTATION_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_HTML_DOCUMENT_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_DTD_NODE' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_ELEMENT_DECL' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_ATTRIBUTE_DECL' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_ENTITY_DECL' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_NAMESPACE_DECL' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_XINCLUDE_START' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_XINCLUDE_END' not handled in switch
+xml_node.c:197: warning: enumeration value 'XML_DOCB_DOCUMENT_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_CDATA_SECTION_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_ENTITY_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_PI_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_COMMENT_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_DOCUMENT_TYPE_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_NOTATION_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_DTD_NODE' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_ELEMENT_DECL' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_ATTRIBUTE_DECL' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_ENTITY_DECL' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_NAMESPACE_DECL' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_XINCLUDE_START' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_XINCLUDE_END' not handled in switch
+xml_node.c:165: warning: enumeration value 'XML_DOCB_DOCUMENT_NODE' not handled in switch
+xml_node.c: In function 'get':
+xml_node.c:839: warning: passing argument 1 of 'calloc' with different width due to prototype
+xml_node.c:839: warning: passing argument 2 of 'calloc' with different width due to prototype
+compiling xml_reader.c
+compiling xml_entity_decl.c
+compiling xml_cdata.c
+compiling xml_namespace.c
+compiling html_sax_push_parser.c
+compiling xml_sax_parser.c
+xml_sax_parser.c: In function 'start_element':
+xml_sax_parser.c:69: warning: passing argument 1 of 'rb_ary_new_from_args' with different width due to prototype
+xml_sax_parser.c: In function 'attributes_as_list':
+xml_sax_parser.c:90: warning: unused parameter 'self'
+xml_sax_parser.c: In function 'start_element_ns':
+xml_sax_parser.c:128: warning: unused parameter 'nb_defaulted'
+linking shared-object nokogiri/nokogiri.so
+Cleaning files only used during build.
+rm -rf /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports
+rmdir -p /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/ext/nokogiri/tmp/x86_64-pc-linux-gnu
+rm -rf /var/www/virtual/engeld/html/amazon-auto-gifter/vendor/bundle/gems/nokogiri-1.6.7.1/ports
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20151221-3924-cu3fzz/nokogiri
